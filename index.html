@@ -61,21 +61,59 @@
         a:hover {
             text-decoration: underline;
         }
+        .compra { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        background: white;  /* Fondo blanco */
+        padding: 20px;
+        margin: 50px auto; 
+        width: 50%;
+        border-radius: 10px;
+        box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+        color: black;  /* Texto en negro */
+    }
+    .compra p {
+        margin: 0;
+        color: black;  /* Texto negro */
+    }
+    .compra input {
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+        background-color: #f0f0f0; /* Fondo claro para el input */
+    }
+    .compra a {
+        padding: 10px 20px;
+        background: #ff5e62;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .compra a:hover {
+        background: #e64a50;
+    }
     </style>
 </head>
 <body>
-    <h1>Página 1 - Productos</h1>
+    <h1>Productos</h1>
     <div class="container">
         <div class="box">
             <img src="producto1.png" alt="Producto 1">
             <p>Precio: $100</p>
             <p>Cantidad: 5</p>
-            <div class="info">
-                <p>Tiendas disponibles:</p>
+            <p>Tiendas disponibles:</p>
                 <ul>
-                    <li>Tienda 1</li>
-                    <li>Tienda 2</li>
+                    <li>Amazon</li>
+                    <li>Mercado Libre</li>
                 </ul>
+            <div class="info">
                 <a href="#">Regresar al inicio</a>
             </div>
         </div>
@@ -83,32 +121,41 @@
             <img src="producto2.png" alt="Producto 2">
             <p>Precio: $200</p>
             <p>Cantidad: 3</p>
+            <p>Freidora digital negra, moderna y compacta, con pantalla táctil LED, tecnología de aire caliente, programas preconfigurados y cesta antiadherente. Ofrece cocción uniforme, menor uso de aceite y apagado automático para mayor seguridad.</p>
             <div class="info">
-                <a href="pagina2.html">Ir a Página 2</a>
+                <a href="pagina2.html">Otros productos</a>
             </div>
         </div>
         <div class="box">
             <img src="producto3.png" alt="Producto 3">
             <p>Precio: $150</p>
             <p>Cantidad: 2</p>
+            <p>Pasos para usar:</p>
+                <ol>
+                    <li>Precalentar la freidora</li>
+                    <li>Añadir el aceite</li>
+                    <li>Colocar los alimentos</li>
+                    <li>Cerrar la freidora y esperar</li>
+                    <li>Servir y disfrutar</li>
+                </ol>
             <div class="info">
                 <a href="#">Regresar al inicio</a>
-                <p>Pasos para usar:</p>
-                <ol>
-                    <li>Paso 1</li>
-                    <li>Paso 2</li>
-                </ol>
             </div>
         </div>
         <div class="box">
             <img src="producto4.png" alt="Producto 4">
             <p>Precio: $250</p>
             <p>Cantidad: 1</p>
+            <p>Licuadora digital negra, moderna y potente, con pantalla táctil LED, múltiples velocidades y función para jugos. Cuenta con cuchillas de acero inoxidable, jarra resistente y sistema de seguridad. Ideal para preparar bebidas frescas y saludables.</p>            
             <div class="info">
-                <a href="pagina2.html">Ir a Página 2</a>
+                <a href="pagina2.html">Otros productos</a>
             </div>
         </div>
     </div>
+    
+    <div class="compra">
+        <p>Total a pagar: $ <input type="text" value="1650" readonly></p>
+        <a href="#">Comprar</a>
+    </div>
 </body>
 </html>
-
