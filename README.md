@@ -16,10 +16,13 @@ A continuación, se presenta una breve explicación de cada una de las páginas 
 
 Representa una página para seleccionar productos de cocina. En ella se pueden elegir diferentes cantidades de diversos productos y simular la compra, mostrando un total a pagar por los artículos seleccionados.
 
-El total a pagar se ajusta automáticamente con base en los productos, cantidades y precios seleccionados. Además, se incluye el manejo de excepciones, como las siguientes:
+El total a pagar se ajusta automáticamente con base en los productos, cantidades y precios seleccionados. Además, se incluye el manejo de casos y excepciones, como las siguientes:
 
 - Al seleccionar el botón de disminución, la cantidad mínima permitida es cero.
 - Al seleccionar el botón de incremento, si la cantidad seleccionada excede la disponible, se despliega una advertencia para el usuario.
+- Al seleccionar alguno de los botones anteriores, el atributo **Cantidad disponible** aumenta sí hay decremento y disminuye si hay incremento.
+
+Para los casos anteriores, se despliega un alert.
 
 ### Página 2
 
