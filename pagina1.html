@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Página 1 - Productos</title>
+    <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+    <a name="inicio"></a>
+    <h1>Productos</h1>
+
+    <div class="container">
+        <div class="box" data-precio="100" data-stock="5">
+            <img src="producto1.png" alt="Producto 1" />
+            <p>Precio: $100</p>
+            <p>Cantidad disponible: 5</p>
+            <p>Tiendas disponibles: Amazon, Mercado Libre</p>
+            <a href="#inicio" class="boton">Regresar al inicio</a>
+            <div class="cantidad-control">
+                <button class="restar">-</button>
+                <input type="text" class="cantidad" value="0" readonly />
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="box" data-precio="200" data-stock="3">
+            <img src="producto2.png" alt="Producto 2" />
+            <p>Precio: $200</p>
+            <p>Cantidad disponible: 3</p>
+            <p>Freidora digital negra, moderna y compacta con pantalla táctil LED, tecnología de aire caliente, programas preconfigurados y cesta antiadherente.</p>
+            <a href="pagina2.html" class="boton">Otros productos</a>
+            <div class="cantidad-control">
+                <button class="restar">-</button>
+                <input type="text" class="cantidad" value="0" readonly />
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="box" data-precio="150" data-stock="2">
+            <img src="producto3.png" alt="Producto 3" />
+            <p>Precio: $150</p>
+            <p>Cantidad disponible: 2</p>
+            <p>Pasos para usar: Precalentar, Añadir aceite, Colocar alimentos, Esperar, Servir.</p>
+            <a href="#inicio" class="boton">Regresar al inicio</a>
+            <div class="cantidad-control">
+                <button class="restar">-</button>
+                <input type="text" class="cantidad" value="0" readonly />
+                <button class="sumar">+</button>
+            </div>
+        </div>
+
+        <div class="box" data-precio="250" data-stock="1">
+            <img src="producto4.png" alt="Producto 4" />
+            <p>Precio: $250</p>
+            <p>Cantidad disponible: 1</p>
+            <p>Licuadora digital negra, moderna y potente con pantalla táctil LED, múltiples velocidades y función para jugos. Cuchillas de acero inoxidable y jarra resistente.</p>
+            <a href="pagina2.html" class="boton">Otros productos</a>
+            <div class="cantidad-control">
+                <button class="restar">-</button>
+                <input type="text" class="cantidad" value="0" readonly />
+                <button class="sumar">+</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="compra">
+        <p>Total a pagar: $ <input type="text" id="total" readonly /></p>
+        <a href="#" class="boton">Comprar</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
